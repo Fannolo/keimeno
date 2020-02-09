@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>773124986581-ec4jibr1r0vthp94rva0mnhsh0qm1hps.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.773124986581-ec4jibr1r0vthp94rva0mnhsh0qm1hps</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCKCU7vsqK2PgR25rGwWiKM3mm6ncbkqdc</string>
+	<key>GCM_SENDER_ID</key>
+	<string>773124986581</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.variablecompany.keimeno</string>
+	<key>PROJECT_ID</key>
+	<string>keimeno-29fd8</string>
+	<key>STORAGE_BUCKET</key>
+	<string>keimeno-29fd8.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:773124986581:ios:d2336b2fef7d612a43b45c</string>
+	<key>DATABASE_URL</key>
+	<string>https://keimeno-29fd8.firebaseio.com</string>
+</dict>
+</plist>
