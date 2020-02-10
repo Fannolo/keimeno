@@ -1,3 +1,3 @@
 const colors = {
-    white: '#000000'
+    white: '#fff'
 }

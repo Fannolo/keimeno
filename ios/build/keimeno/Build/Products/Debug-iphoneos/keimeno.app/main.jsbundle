@@ -1286,7 +1286,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
   _reactNative.AppRegistry.registerComponent(_app.name, function () {
     return _App.default;
   });
-},0,[1,2,445,458],"index.js");
+},0,[1,2,445,460],"index.js");
 __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, exports, _dependencyMap) {
   function _interopRequireDefault(obj) {
     return obj && obj.__esModule ? obj : {
@@ -96089,6 +96089,8 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
 
   var _reactNativeCamera = _$$_REQUIRE(_dependencyMap[8], "react-native-camera");
 
+  var _CameraButton = _$$_REQUIRE(_dependencyMap[9], "../components/camera/CameraButton");
+
   var _jsxFileName = "/Users/alessandro/Projects/ReactNative/keimeno/src/screens/Homepage.js";
 
   var HomePage = function (_React$Component) {
@@ -96104,28 +96106,45 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
       value: function render() {
         var _this = this;
 
-        return _react.default.createElement(_reactNativeCamera.RNCamera, {
+        var cameraButton = styles.cameraButton,
+            camera = styles.camera;
+        return _react.default.createElement(_react.default.Fragment, null, _react.default.createElement(_reactNativeCamera.RNCamera, {
           ref: function ref(_ref) {
             _this.camera = _ref;
           },
           cameraProps: {
             captureAudio: false
           },
-          style: {
-            flex: 1
-          },
+          style: camera,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 12
+            lineNumber: 15
           }
-        });
+        }), _react.default.createElement(_CameraButton.CameraButton, {
+          style: cameraButton,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 22
+          }
+        }));
       }
     }]);
     return HomePage;
   }(_react.default.Component);
 
   exports.default = HomePage;
-},454,[1,24,25,39,41,44,56,2,455],"src/screens/Homepage.js");
+
+  var styles = _reactNative.StyleSheet.create({
+    cameraButton: {
+      zIndex: 1,
+      position: 'absolute'
+    },
+    camera: {
+      flex: 1,
+      zIndex: 0
+    }
+  });
+},454,[1,24,25,39,41,44,56,2,455,458],"src/screens/Homepage.js");
 __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, exports, _dependencyMap) {
   var _interopRequireDefault = _$$_REQUIRE(_dependencyMap[0], "@babel/runtime/helpers/interopRequireDefault");
 
@@ -97146,11 +97165,55 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
   var Constants = FaceDetector.Constants;
   exports.Constants = Constants;
 },457,[1,51,24,25,2],"node_modules/react-native-camera/src/FaceDetector.js");
+__d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, exports, _dependencyMap) {
+  var _interopRequireDefault = _$$_REQUIRE(_dependencyMap[0], "@babel/runtime/helpers/interopRequireDefault");
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  exports.CameraButton = void 0;
+
+  var _react = _interopRequireDefault(_$$_REQUIRE(_dependencyMap[1], "react"));
+
+  var _reactNative = _$$_REQUIRE(_dependencyMap[2], "react-native");
+
+  var _Colors = _interopRequireDefault(_$$_REQUIRE(_dependencyMap[3], "../../utils/Colors"));
+
+  var _jsxFileName = "/Users/alessandro/Projects/ReactNative/keimeno/src/components/camera/CameraButton.js";
+
+  var CameraButton = function CameraButton(props) {
+    var cameraButton = styles.cameraButton;
+    return _react.default.createElement(_reactNative.TouchableOpacity, {
+      style: [cameraButton, props.style],
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 7
+      }
+    });
+  };
+
+  exports.CameraButton = CameraButton;
+
+  var styles = _reactNative.StyleSheet.create({
+    cameraButton: {
+      width: 60,
+      height: 60,
+      borderRadius: 15,
+      borderColor: _Colors.default.white,
+      borderWidth: 4
+    }
+  });
+},458,[1,56,2,459],"src/components/camera/CameraButton.js");
+__d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, exports, _dependencyMap) {
+  var colors = {
+    white: '#ffffff'
+  };
+},459,[],"src/utils/Colors.js");
 __d(function(global, require, _aUnused, _bUnused, module, exports, _cUnused) {
   module.exports = {
   "name": "keimeno",
   "displayName": "keimeno"
 };
-},458,[],"app.json");
+},460,[],"app.json");
 __r(98);
 __r(0);
