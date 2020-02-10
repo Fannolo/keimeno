@@ -1,11 +1,11 @@
 import React from 'react';
-import {View, Text, SafeAreaView, StyleSheet} from 'react-native';
+import {SafeAreaView, StyleSheet} from 'react-native';
 import {RNCamera} from 'react-native-camera';
 import {CameraButton} from '../components/camera/CameraButton';
 
 export default class HomePage extends React.Component {
   constructor(props) {
-    super();
+    super(props);
   }
 
   render() {
