@@ -6,7 +6,7 @@
 	<integer>10</integer>
 	<key>logs</key>
 	<dict>
-		<key>674DE97E-CEF3-4D37-B195-CB9FEC703A4A</key>
+		<key>73F260D5-C4BD-4C6B-A9C7-F9D301071E99</key>
 		<dict>
 			<key>className</key>
 			<string>IDECommandLineBuildLog</string>
@@ -15,13 +15,13 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>674DE97E-CEF3-4D37-B195-CB9FEC703A4A.xcactivitylog</string>
+			<string>73F260D5-C4BD-4C6B-A9C7-F9D301071E99.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
 			<dict>
 				<key>highLevelStatus</key>
-				<string>E</string>
+				<string>W</string>
 			</dict>
 			<key>schemeIdentifier-containerName</key>
 			<string>keimeno project</string>
@@ -32,13 +32,13 @@
 			<key>signature</key>
 			<string>Building workspace keimeno with scheme keimeno and configuration Debug</string>
 			<key>timeStartedRecording</key>
-			<real>602979900.55710697</real>
+			<real>603234891.31217802</real>
 			<key>timeStoppedRecording</key>
-			<real>602979903.12302005</real>
+			<real>603234933.98545206</real>
 			<key>title</key>
 			<string>Building workspace keimeno with scheme keimeno and configuration Debug</string>
 			<key>uniqueIdentifier</key>
-			<string>674DE97E-CEF3-4D37-B195-CB9FEC703A4A</string>
+			<string>73F260D5-C4BD-4C6B-A9C7-F9D301071E99</string>
 		</dict>
 		<key>E411BE51-BB5C-40DE-9FD6-912DA97C64A3</key>
 		<dict>

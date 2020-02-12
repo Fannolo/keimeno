@@ -96098,7 +96098,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
 
     function HomePage(props) {
       (0, _classCallCheck2.default)(this, HomePage);
-      return (0, _possibleConstructorReturn2.default)(this, (0, _getPrototypeOf2.default)(HomePage).call(this));
+      return (0, _possibleConstructorReturn2.default)(this, (0, _getPrototypeOf2.default)(HomePage).call(this, props));
     }
 
     (0, _createClass2.default)(HomePage, [{
@@ -96106,7 +96106,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
       value: function render() {
         var _this = this;
 
-        var cameraButton = styles.cameraButton,
+        var cameraButtonContainer = styles.cameraButtonContainer,
             camera = styles.camera;
         return _react.default.createElement(_react.default.Fragment, null, _react.default.createElement(_reactNativeCamera.RNCamera, {
           ref: function ref(_ref) {
@@ -96120,13 +96120,18 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
             fileName: _jsxFileName,
             lineNumber: 15
           }
-        }), _react.default.createElement(_CameraButton.CameraButton, {
-          style: cameraButton,
+        }), _react.default.createElement(_reactNative.SafeAreaView, {
+          style: cameraButtonContainer,
           __source: {
             fileName: _jsxFileName,
             lineNumber: 22
           }
-        }));
+        }, _react.default.createElement(_CameraButton.CameraButton, {
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 23
+          }
+        })));
       }
     }]);
     return HomePage;
@@ -96135,9 +96140,14 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
   exports.default = HomePage;
 
   var styles = _reactNative.StyleSheet.create({
-    cameraButton: {
+    cameraButtonContainer: {
       zIndex: 1,
-      position: 'absolute'
+      width: '100%',
+      position: 'absolute',
+      bottom: 0,
+      flexDirection: 'row',
+      justifyContent: 'center',
+      alignItems: 'center'
     },
     camera: {
       flex: 1,
@@ -97185,6 +97195,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
     var cameraButton = styles.cameraButton;
     return _react.default.createElement(_reactNative.TouchableOpacity, {
       style: [cameraButton, props.style],
+      onPress: props.onPress,
       __source: {
         fileName: _jsxFileName,
         lineNumber: 7
@@ -97200,13 +97211,15 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
       height: 60,
       borderRadius: 15,
       borderColor: _Colors.default.white,
+      color: _Colors.default.white,
+      backgroundColor: _Colors.default.white,
       borderWidth: 4
     }
   });
 },458,[1,56,2,459],"src/components/camera/CameraButton.js");
 __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, exports, _dependencyMap) {
   var colors = {
-    white: '#ffffff'
+    white: '#fff'
   };
 },459,[],"src/utils/Colors.js");
 __d(function(global, require, _aUnused, _bUnused, module, exports, _cUnused) {
