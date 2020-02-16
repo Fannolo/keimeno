@@ -6,11 +6,11 @@
 	<dict>
 		<key>Base.lproj/LaunchScreen.nib/objects-13.0+.nib</key>
 		<data>
-		cmuZcxVLET/T5tGidHUj79NNsHM=
+		1d9yM1Hvc2YGtNYIcuKlXsbw9YI=
 		</data>
 		<key>Base.lproj/LaunchScreen.nib/runtime.nib</key>
 		<data>
-		R9XG3I8ycCt3fbV1T4G9MguAJSo=
+		UUkf8QrS087cZlujrbcww3uL930=
 		</data>
 		<key>Frameworks/XCTAutomationSupport.framework/Info.plist</key>
 		<data>
@@ -151,7 +151,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		8hfb4RYS8UGfhConVTae0+5S258=
+		13o4GUTDEI9cGkRlnaBrrSJDiW0=
 		</data>
 		<key>PkgInfo</key>
 		<data>
@@ -163,7 +163,7 @@
 		</data>
 		<key>PlugIns/keimenoTests.xctest.dSYM/Contents/Resources/DWARF/keimenoTests</key>
 		<data>
-		c0jINX6Ii34WTo3urU2gbXFJYeI=
+		Ib/frteRrlSUAI40NfgLJQPWjpo=
 		</data>
 		<key>PlugIns/keimenoTests.xctest/Info.plist</key>
 		<data>
@@ -175,7 +175,7 @@
 		</data>
 		<key>PlugIns/keimenoTests.xctest/keimenoTests</key>
 		<data>
-		jEq+V0MjbCLRUwS9OVGIFK4MceI=
+		zdIuau3cKQ3Z79fnQxqIKF00lMo=
 		</data>
 		<key>assets/app.json</key>
 		<data>
@@ -195,39 +195,27 @@
 		</data>
 		<key>main.jsbundle</key>
 		<data>
-		fWPEDeGXfejpsJwKi0CKU4cXOOM=
+		iPJiOZaotolqqCzEQk5/Gq6mrZA=
 		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
 		<key>Base.lproj/LaunchScreen.nib/objects-13.0+.nib</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			cmuZcxVLET/T5tGidHUj79NNsHM=
-			</data>
 			<key>hash2</key>
 			<data>
-			dTEb/5lxO2fknUVGMPNXFi1Z4EOIeJ4G2IEH346oO00=
+			v7iAPmSdf1Y/D0X1oQswf4pKQsWfIDqZPuk7b+Z/6rg=
 			</data>
 		</dict>
 		<key>Base.lproj/LaunchScreen.nib/runtime.nib</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			R9XG3I8ycCt3fbV1T4G9MguAJSo=
-			</data>
 			<key>hash2</key>
 			<data>
-			7XQtEyTQBRbenuYTSEJftSvqJbzzTOH/oiIw7CE5PfU=
+			y3oACTCAC8fe7SQ/k7pk+Jr2XLqdMv2ECXDEG0Zr3VA=
 			</data>
 		</dict>
 		<key>Frameworks/XCTAutomationSupport.framework/Info.plist</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			6aRvYZA7wfVM2Hv8+3MQeM7Oqjo=
-			</data>
 			<key>hash2</key>
 			<data>
 			Sqe/OpHpGYCE3LlTtgJtdBg4M+7QykUmo2e8Z0Flgao=
@@ -235,10 +223,6 @@
 		</dict>
 		<key>Frameworks/XCTAutomationSupport.framework/XCTAutomationSupport</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			miuqOn/E0YtSUFFGpyIem/ZASIs=
-			</data>
 			<key>hash2</key>
 			<data>
 			uj5flTkVywke4G3r001aj5rd+DYEXjJfd909kRbaH6U=
@@ -246,10 +230,6 @@
 		</dict>
 		<key>Frameworks/XCTAutomationSupport.framework/_CodeSignature/CodeResources</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			AJuWCNm9AaPBXWoicIKmspRdKmE=
-			</data>
 			<key>hash2</key>
 			<data>
 			hOpMCmx54etuhsDiwp+onVcv/VUbwPyIMdY/FESUg9E=
@@ -257,10 +237,6 @@
 		</dict>
 		<key>Frameworks/XCTAutomationSupport.framework/version.plist</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			gYa/khek5XSCNeEWXnY34U8ySZw=
-			</data>
 			<key>hash2</key>
 			<data>
 			S+zxGVAUUahiwML67Vju19ajfCe0cUiGTvRmKrStI0c=
@@ -268,10 +244,6 @@
 		</dict>
 		<key>Frameworks/XCTest.framework/Info.plist</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			qmfbVEBTROFP3ew3FkTGTGPT0ts=
-			</data>
 			<key>hash2</key>
 			<data>
 			3wuri5mvtd/GSJHxSpxjHKZBGvkqNk3avMjKONqfWwA=
@@ -279,10 +251,6 @@
 		</dict>
 		<key>Frameworks/XCTest.framework/XCTest</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			tFNPTCRlQgUcGQPVeBjobtFNU+w=
-			</data>
 			<key>hash2</key>
 			<data>
 			gRyOfVAZUb77Q6n+hAifLHBKwaIyYLVTdU/CYV7qek4=
@@ -290,10 +258,6 @@
 		</dict>
 		<key>Frameworks/XCTest.framework/_CodeSignature/CodeResources</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			Gl20kOgk6AGVn8oFgepa9Os5Uns=
-			</data>
 			<key>hash2</key>
 			<data>
 			f+Pe12ozJnYTIwBTM2HdbB1VQzeUmt3tJ8CbkPVyAUU=
@@ -301,10 +265,6 @@
 		</dict>
 		<key>Frameworks/XCTest.framework/en.lproj/InfoPlist.strings</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			TuBj57ZP6zBqcL9HttO2Rucaw9E=
-			</data>
 			<key>hash2</key>
 			<data>
 			89RGkjZaKuewYnjpzwhIswhqfrU8+pcEXqM/DHVrUmo=
@@ -314,10 +274,6 @@
 		</dict>
 		<key>Frameworks/XCTest.framework/version.plist</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			gYa/khek5XSCNeEWXnY34U8ySZw=
-			</data>
 			<key>hash2</key>
 			<data>
 			S+zxGVAUUahiwML67Vju19ajfCe0cUiGTvRmKrStI0c=
@@ -325,10 +281,6 @@
 		</dict>
 		<key>Frameworks/libXCTestBundleInject.dylib</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			/CNbCjb9qR04wuhrRn5u8leG7x4=
-			</data>
 			<key>hash2</key>
 			<data>
 			9pLtfXujndiffGrJzmGIcOzeQt+SWJh54lHOyAAxx14=
@@ -336,10 +288,6 @@
 		</dict>
 		<key>Frameworks/libXCTestSwiftSupport.dylib</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			1gaWoC++7VPgYZaK979iJT2cKRk=
-			</data>
 			<key>hash2</key>
 			<data>
 			pPIGxAz1ATgOFiygIzVYW+f17kqc5LLVz/WomECpbFA=
@@ -347,10 +295,6 @@
 		</dict>
 		<key>GoogleMVFaceDetectorResources.bundle/BCLjoy_200.emd</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			96Uw5p4tLIiDbN11Du0p0c5xqE8=
-			</data>
 			<key>hash2</key>
 			<data>
 			8A8lZEpijnOMFV9JPQcq8UPyU8v5nwi/SCnL5dT0NRw=
@@ -358,10 +302,6 @@
 		</dict>
 		<key>GoogleMVFaceDetectorResources.bundle/BCLlefteyeclosed_200.emd</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			KBTvwnLXsoe2PIlGUwZzMUOp5k8=
-			</data>
 			<key>hash2</key>
 			<data>
 			0xIT5PJf+LIXgeeG/YnO3lkX75s/vlC99V1IOvE27e0=
@@ -369,10 +309,6 @@
 		</dict>
 		<key>GoogleMVFaceDetectorResources.bundle/BCLrighteyeclosed_200.emd</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			fW6O7h6Je5DNmNrbOeCGmAixyLI=
-			</data>
 			<key>hash2</key>
 			<data>
 			Y8oL2DjlGXdImtrbgKC+AWxaoLe2kPvDiaBkWqzP5P8=
@@ -380,10 +316,6 @@
 		</dict>
 		<key>GoogleMVFaceDetectorResources.bundle/Info.plist</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			rVhvtpjJiF2H8lAg2xsYlcKReYU=
-			</data>
 			<key>hash2</key>
 			<data>
 			k/m5pwT7+KpgGO9ts4kqcdIC/SzMh6MKt1VFuC7EVcI=
@@ -391,10 +323,6 @@
 		</dict>
 		<key>GoogleMVFaceDetectorResources.bundle/LMprec_600.emd</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			trY9XrpS4DxHzs3eHljZHIJNHrI=
-			</data>
 			<key>hash2</key>
 			<data>
 			DtXIUoL5QNFKVyOmwK8F+cKr1Okww8TwvloHI203QRE=
@@ -402,10 +330,6 @@
 		</dict>
 		<key>GoogleMVFaceDetectorResources.bundle/MFT_fssd_accgray.pb</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			tq7fRawRQ359i/c0FEVvpQ6Oee0=
-			</data>
 			<key>hash2</key>
 			<data>
 			8K2wTXshtNmImTKmLw7/En7tsn0vhTQqkBRBU8oLgbE=
@@ -413,10 +337,6 @@
 		</dict>
 		<key>GoogleMVFaceDetectorResources.bundle/MFT_fssd_fastgray.pb</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			DP+qJf0czliL6znGLVx90ASNzCY=
-			</data>
 			<key>hash2</key>
 			<data>
 			CUNCXfGzUODFinvmaL4flC6sM4wZjhpPFoWco+Eif0U=
@@ -424,10 +344,6 @@
 		</dict>
 		<key>GoogleMVFaceDetectorResources.bundle/blazeface.tfl</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			oseYQ/EQxo7JsNpdNgo4YVLh7a4=
-			</data>
 			<key>hash2</key>
 			<data>
 			TyXMFC6WtfIbMjbSFmwuZikgaB8dI5QtJRDpjIr27Nw=
@@ -435,10 +351,6 @@
 		</dict>
 		<key>GoogleMVFaceDetectorResources.bundle/contours.tfl</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			PaAh9+zFw3Is4fLMn5iQsLG5M34=
-			</data>
 			<key>hash2</key>
 			<data>
 			hBYLwMSnSVF+Yvk8ssaKuP9J3lcfcOttFgJUypoHicA=
@@ -446,10 +358,6 @@
 		</dict>
 		<key>GoogleMVFaceDetectorResources.bundle/fssd_100_8bit_gray_v1.tflite</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			VCp0NyrYJWQnYbGaxVv0Vzy0IeA=
-			</data>
 			<key>hash2</key>
 			<data>
 			ekzwnGrkp1gUTUK/NbmiapWYfjxYQdDcORCVaYKZ2as=
@@ -457,10 +365,6 @@
 		</dict>
 		<key>GoogleMVFaceDetectorResources.bundle/fssd_100_8bit_v1.tflite</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			AHaxev+fV4YGoIDboAUFlxfISmY=
-			</data>
 			<key>hash2</key>
 			<data>
 			OvuTDu3I0dQENEgCgdO16M7EwwTlLTT9/IqVCDQLtxk=
@@ -468,10 +372,6 @@
 		</dict>
 		<key>GoogleMVFaceDetectorResources.bundle/fssd_25_8bit_gray_v1.tflite</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			Rd53RFFpKHZNvbiDaE2p4XxjbY0=
-			</data>
 			<key>hash2</key>
 			<data>
 			IVEbvtJxoKkri5ORjg+I9u+70RWjbRVV8GHO4TH2qzw=
@@ -479,10 +379,6 @@
 		</dict>
 		<key>GoogleMVFaceDetectorResources.bundle/fssd_25_8bit_v1.tflite</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			RxtbTN3LjpFChp3tmniX3KD+dsE=
-			</data>
 			<key>hash2</key>
 			<data>
 			2pAlL0mzu5QuX4gBgKFFYfZpKW5/s+3s3quqi2u3gio=
@@ -490,10 +386,6 @@
 		</dict>
 		<key>GoogleMVTextDetectorResources.bundle/Info.plist</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			RZeD/6HkEIuaLlAwQfNUYq2oQcI=
-			</data>
 			<key>hash2</key>
 			<data>
 			y1DqvUZntXxwBWni4T1FuCJsRd5HfDtI1ihhGrQHVns=
@@ -501,10 +393,6 @@
 		</dict>
 		<key>GoogleMVTextDetectorResources.bundle/region_proposal_text_detector_tflite_gray_quantized.bincfg</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			V2ROSYH9TDZ87SKQfYmC78jkabg=
-			</data>
 			<key>hash2</key>
 			<data>
 			Gji2RtEJwU3YrjDV8SqQNvYPnpI8kwEzeqJQd1nysJg=
@@ -512,10 +400,6 @@
 		</dict>
 		<key>GoogleMVTextDetectorResources.bundle/rpn_lstm_engine_tflite_latin.bincfg</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			X9FwN8XPa5XVLjOL7sFGSu3g7JA=
-			</data>
 			<key>hash2</key>
 			<data>
 			VpYmR1j7dcZh0xAB9ljAGf5DzuiKaKCz+jcp0cAkd/c=
@@ -523,10 +407,6 @@
 		</dict>
 		<key>GoogleMVTextDetectorResources.bundle/rpn_text_detector_mobile_space_to_depth_quantized_v2.tflite</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			6ny23cax5EGQNgpJKSnhJUhpxtQ=
-			</data>
 			<key>hash2</key>
 			<data>
 			KQajsAlTNRgTxJFzQeGXEH7SqqwtF2UIkHWNwZAnHe4=
@@ -534,10 +414,6 @@
 		</dict>
 		<key>GoogleMVTextDetectorResources.bundle/tflite_lstm_recognizer_latin_0.3.bincfg</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			ixRR2K5ZEPmzRLTzVw1N8fzeIT0=
-			</data>
 			<key>hash2</key>
 			<data>
 			WWAFDedH5yYOYcmXOrtzF8y39iXBQE6/iRjBKrvI7P4=
@@ -545,10 +421,6 @@
 		</dict>
 		<key>GoogleMVTextDetectorResources.bundle/tflite_lstm_recognizer_latin_0.3.class_lst</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			68PK2+uslXMmEpqkRadeVy2t0PE=
-			</data>
 			<key>hash2</key>
 			<data>
 			VRUPJ3nQeTbJ+/i+y7hWf+PqWta22UQkWClpWorpaPo=
@@ -556,10 +428,6 @@
 		</dict>
 		<key>GoogleMVTextDetectorResources.bundle/tflite_lstm_recognizer_latin_0.3.conv_model</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			BQIj06B3MVer0TIFCE1lwPQqAQ8=
-			</data>
 			<key>hash2</key>
 			<data>
 			ZKunGbTtHuWz1IhsWq8LGsBRv1h56bCOhh4OKeIKCKc=
@@ -567,10 +435,6 @@
 		</dict>
 		<key>GoogleMVTextDetectorResources.bundle/tflite_lstm_recognizer_latin_0.3.lstm_model</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			oYS7+p9yJEEy3UOE1YgjDNNbLAM=
-			</data>
 			<key>hash2</key>
 			<data>
 			DtYuT74PxcQJCuxHOxNuGI+ChZB2XAKDgjWNrds8y24=
@@ -578,10 +442,6 @@
 		</dict>
 		<key>GoogleService-Info.plist</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			GKI3lgX4SL6ZOIwAUwN0zD5mrkk=
-			</data>
 			<key>hash2</key>
 			<data>
 			DC+s5cstMQFM/lvKpVGipdVN8CnbvWHbaihr0VKnBeQ=
@@ -589,10 +449,6 @@
 		</dict>
 		<key>PlugIns/keimenoTests.xctest.dSYM/Contents/Info.plist</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			agPh/Vp1IWzC7pmfvGFV+ABsNu8=
-			</data>
 			<key>hash2</key>
 			<data>
 			+ozvE+xDS9e6mguNV7wWMmT58VozfYeMw+qy7JxiLys=
@@ -600,21 +456,13 @@
 		</dict>
 		<key>PlugIns/keimenoTests.xctest.dSYM/Contents/Resources/DWARF/keimenoTests</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			c0jINX6Ii34WTo3urU2gbXFJYeI=
-			</data>
 			<key>hash2</key>
 			<data>
-			5FRAlzZmUPviRk+bZI0irPjRWnI5CXxkElD5/0hjfiQ=
+			8j5EVFMB1pZMgV29/ZuiPoLbauoy0mnNdh9M5BrVP1A=
 			</data>
 		</dict>
 		<key>PlugIns/keimenoTests.xctest/Info.plist</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			ljCvfh2IXkfo8MNl/TTgbl6VQj4=
-			</data>
 			<key>hash2</key>
 			<data>
 			XQFYFlq+xT3V79cpHYdQQXI1ssIaTA6na1d5gp2YSU4=
@@ -622,10 +470,6 @@
 		</dict>
 		<key>PlugIns/keimenoTests.xctest/_CodeSignature/CodeResources</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			a8V5Y0RQZpQovfhKFalw6XYJ/Gc=
-			</data>
 			<key>hash2</key>
 			<data>
 			fTRGekZ/wUcEGCAms58lbNpd2QviTDnrgy9KIll++UU=
@@ -633,21 +477,13 @@
 		</dict>
 		<key>PlugIns/keimenoTests.xctest/keimenoTests</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			jEq+V0MjbCLRUwS9OVGIFK4MceI=
-			</data>
 			<key>hash2</key>
 			<data>
-			KOZdRz3sASVDFS2MgyiEs2HUWd7dGn6N9i+2pRGnB8Q=
+			wx/CJ3QQgDW0rE/SSmj7imIeM58jb4QFEMwFfZ6CSPY=
 			</data>
 		</dict>
 		<key>assets/app.json</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			P/dgA0TXbRn36W9nRzoe+oKPuLk=
-			</data>
 			<key>hash2</key>
 			<data>
 			CPzTN3/lpfOPR+McPgWjst9VY8v4oxuq43oXTAxH5o8=
@@ -655,10 +491,6 @@
 		</dict>
 		<key>assets/node_modules/react-native/Libraries/NewAppScreen/components/logo.png</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			4K8x+nS4CTlAvCQW4s8i6jn5V10=
-			</data>
 			<key>hash2</key>
 			<data>
 			O1vzdHf7ZoEnpM2Eyd8pgI8NYBkJQyorjpdBKhYRkdg=
@@ -666,10 +498,6 @@
 		</dict>
 		<key>embedded.mobileprovision</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			65A2fQqLzboUQdhW45QkSl4cyFw=
-			</data>
 			<key>hash2</key>
 			<data>
 			/A82s1FGBR23hIi2PLfGXPas5C8opmqqnJbgQf3LJxA=
@@ -677,10 +505,6 @@
 		</dict>
 		<key>ip.txt</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			Cf4n2o3ynHzolWrUPKqsIbLgzlY=
-			</data>
 			<key>hash2</key>
 			<data>
 			9LAETQZwnCFvHpZUChiyYBStHcgDIDCsDGItaUv1HmY=
@@ -688,13 +512,9 @@
 		</dict>
 		<key>main.jsbundle</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			fWPEDeGXfejpsJwKi0CKU4cXOOM=
-			</data>
 			<key>hash2</key>
 			<data>
-			5vAW2IwVt0+VMn8tqxj+lsG1SOhqFn7gaZAYcOghYm8=
+			OyUYby6MObaobYHWl5x5k79lJCtgAKBI1lnLNNjr4sE=
 			</data>
 		</dict>
 	</dict>

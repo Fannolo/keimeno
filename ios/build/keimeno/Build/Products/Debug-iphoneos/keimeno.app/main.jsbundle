@@ -1286,7 +1286,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
   _reactNative.AppRegistry.registerComponent(_app.name, function () {
     return _App.default;
   });
-},0,[1,2,445,460],"index.js");
+},0,[1,2,445,466],"index.js");
 __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, exports, _dependencyMap) {
   function _interopRequireDefault(obj) {
     return obj && obj.__esModule ? obj : {
@@ -96073,23 +96073,27 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
   });
   exports.default = void 0;
 
-  var _classCallCheck2 = _interopRequireDefault(_$$_REQUIRE(_dependencyMap[1], "@babel/runtime/helpers/classCallCheck"));
+  var _regenerator = _interopRequireDefault(_$$_REQUIRE(_dependencyMap[1], "@babel/runtime/regenerator"));
 
-  var _createClass2 = _interopRequireDefault(_$$_REQUIRE(_dependencyMap[2], "@babel/runtime/helpers/createClass"));
+  var _classCallCheck2 = _interopRequireDefault(_$$_REQUIRE(_dependencyMap[2], "@babel/runtime/helpers/classCallCheck"));
 
-  var _possibleConstructorReturn2 = _interopRequireDefault(_$$_REQUIRE(_dependencyMap[3], "@babel/runtime/helpers/possibleConstructorReturn"));
+  var _createClass2 = _interopRequireDefault(_$$_REQUIRE(_dependencyMap[3], "@babel/runtime/helpers/createClass"));
 
-  var _getPrototypeOf2 = _interopRequireDefault(_$$_REQUIRE(_dependencyMap[4], "@babel/runtime/helpers/getPrototypeOf"));
+  var _possibleConstructorReturn2 = _interopRequireDefault(_$$_REQUIRE(_dependencyMap[4], "@babel/runtime/helpers/possibleConstructorReturn"));
 
-  var _inherits2 = _interopRequireDefault(_$$_REQUIRE(_dependencyMap[5], "@babel/runtime/helpers/inherits"));
+  var _getPrototypeOf2 = _interopRequireDefault(_$$_REQUIRE(_dependencyMap[5], "@babel/runtime/helpers/getPrototypeOf"));
 
-  var _react = _interopRequireDefault(_$$_REQUIRE(_dependencyMap[6], "react"));
+  var _inherits2 = _interopRequireDefault(_$$_REQUIRE(_dependencyMap[6], "@babel/runtime/helpers/inherits"));
 
-  var _reactNative = _$$_REQUIRE(_dependencyMap[7], "react-native");
+  var _react = _interopRequireDefault(_$$_REQUIRE(_dependencyMap[7], "react"));
 
-  var _reactNativeCamera = _$$_REQUIRE(_dependencyMap[8], "react-native-camera");
+  var _reactNative = _$$_REQUIRE(_dependencyMap[8], "react-native");
 
-  var _CameraButton = _$$_REQUIRE(_dependencyMap[9], "../components/camera/CameraButton");
+  var _reactNativeCamera = _$$_REQUIRE(_dependencyMap[9], "react-native-camera");
+
+  var _components = _$$_REQUIRE(_dependencyMap[10], "../components");
+
+  var _cameraroll = _interopRequireDefault(_$$_REQUIRE(_dependencyMap[11], "@react-native-community/cameraroll"));
 
   var _jsxFileName = "/Users/alessandro/Projects/ReactNative/keimeno/src/screens/Homepage.js";
 
@@ -96097,39 +96101,101 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
     (0, _inherits2.default)(HomePage, _React$Component);
 
     function HomePage(props) {
+      var _this;
+
       (0, _classCallCheck2.default)(this, HomePage);
-      return (0, _possibleConstructorReturn2.default)(this, (0, _getPrototypeOf2.default)(HomePage).call(this, props));
+      _this = (0, _possibleConstructorReturn2.default)(this, (0, _getPrototypeOf2.default)(HomePage).call(this, props));
+
+      _this.takePicture = function _callee() {
+        var data;
+        return _regenerator.default.async(function _callee$(_context) {
+          while (1) {
+            switch (_context.prev = _context.next) {
+              case 0:
+                if (!this.camera) {
+                  _context.next = 6;
+                  break;
+                }
+
+                _context.next = 3;
+                return _regenerator.default.awrap(this.camera.takePictureAsync());
+
+              case 3:
+                data = _context.sent;
+                console.warn('takePicture ', data);
+
+                _cameraroll.default.saveToCameraRoll(data.uri, "photo");
+
+              case 6:
+              case "end":
+                return _context.stop();
+            }
+          }
+        }, null, this);
+      };
+
+      _this.textRecognized = function (object) {
+        var textBlocks = object.textBlocks;
+
+        _this.setState({
+          textBlocks: textBlocks
+        });
+      };
+
+      _this.state = {
+        textBlocks: null,
+        textRecognition: false
+      };
+      return _this;
     }
 
     (0, _createClass2.default)(HomePage, [{
       key: "render",
       value: function render() {
-        var _this = this;
+        var _this2 = this;
 
         var cameraButtonContainer = styles.cameraButtonContainer,
-            camera = styles.camera;
+            camera = styles.camera,
+            textBlocksContainer = styles.textBlocksContainer;
         return _react.default.createElement(_react.default.Fragment, null, _react.default.createElement(_reactNativeCamera.RNCamera, {
           ref: function ref(_ref) {
-            _this.camera = _ref;
+            _this2.camera = _ref;
           },
           cameraProps: {
             captureAudio: false
           },
           style: camera,
+          onTextRecognized: this.state.textRecognition && this.textRecognized,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 15
+            lineNumber: 33
           }
+        }), this.state.textBlocks && this.state.textBlocks.map(function (items) {
+          return _react.default.createElement(_components.TextBlocks, {
+            style: textBlocksContainer,
+            width: items.bounds.size.width,
+            height: items.bounds.size.height,
+            left: items.bounds.origin.x,
+            top: items.bounds.origin.y,
+            onPress: function onPress() {
+              console.log(items.value);
+            },
+            __source: {
+              fileName: _jsxFileName,
+              lineNumber: 44
+            }
+          });
         }), _react.default.createElement(_reactNative.SafeAreaView, {
           style: cameraButtonContainer,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 22
+            lineNumber: 53
           }
-        }, _react.default.createElement(_CameraButton.CameraButton, {
+        }, _react.default.createElement(_components.CameraButton, {
+          onPress: this.takePicture.bind(this),
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 23
+            lineNumber: 54
           }
         })));
       }
@@ -96152,9 +96218,12 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
     camera: {
       flex: 1,
       zIndex: 0
+    },
+    textBlocksContainer: {
+      position: 'absolute'
     }
   });
-},454,[1,24,25,39,41,44,56,2,455,458],"src/screens/Homepage.js");
+},454,[1,110,24,25,39,41,44,56,2,455,458,464],"src/screens/Homepage.js");
 __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, exports, _dependencyMap) {
   var _interopRequireDefault = _$$_REQUIRE(_dependencyMap[0], "@babel/runtime/helpers/interopRequireDefault");
 
@@ -97176,6 +97245,52 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
   exports.Constants = Constants;
 },457,[1,51,24,25,2],"node_modules/react-native-camera/src/FaceDetector.js");
 __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, exports, _dependencyMap) {
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+
+  var _camera = _$$_REQUIRE(_dependencyMap[0], "./camera");
+
+  Object.keys(_camera).forEach(function (key) {
+    if (key === "default" || key === "__esModule") return;
+    Object.defineProperty(exports, key, {
+      enumerable: true,
+      get: function get() {
+        return _camera[key];
+      }
+    });
+  });
+},458,[459],"src/components/index.js");
+__d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, exports, _dependencyMap) {
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+
+  var _CameraButton = _$$_REQUIRE(_dependencyMap[0], "./CameraButton");
+
+  Object.keys(_CameraButton).forEach(function (key) {
+    if (key === "default" || key === "__esModule") return;
+    Object.defineProperty(exports, key, {
+      enumerable: true,
+      get: function get() {
+        return _CameraButton[key];
+      }
+    });
+  });
+
+  var _TextBlocks = _$$_REQUIRE(_dependencyMap[1], "./TextBlocks");
+
+  Object.keys(_TextBlocks).forEach(function (key) {
+    if (key === "default" || key === "__esModule") return;
+    Object.defineProperty(exports, key, {
+      enumerable: true,
+      get: function get() {
+        return _TextBlocks[key];
+      }
+    });
+  });
+},459,[460,463],"src/components/camera/index.js");
+__d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, exports, _dependencyMap) {
   var _interopRequireDefault = _$$_REQUIRE(_dependencyMap[0], "@babel/runtime/helpers/interopRequireDefault");
 
   Object.defineProperty(exports, "__esModule", {
@@ -97187,7 +97302,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
 
   var _reactNative = _$$_REQUIRE(_dependencyMap[2], "react-native");
 
-  var _Colors = _interopRequireDefault(_$$_REQUIRE(_dependencyMap[3], "../../utils/Colors"));
+  var _utils = _$$_REQUIRE(_dependencyMap[3], "../../utils");
 
   var _jsxFileName = "/Users/alessandro/Projects/ReactNative/keimeno/src/components/camera/CameraButton.js";
 
@@ -97207,26 +97322,232 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
 
   var styles = _reactNative.StyleSheet.create({
     cameraButton: {
-      width: 60,
-      height: 60,
-      borderRadius: 15,
-      borderColor: _Colors.default.white,
-      color: _Colors.default.white,
-      backgroundColor: _Colors.default.white,
+      width: 70,
+      height: 70,
+      borderRadius: 50,
+      borderColor: _utils.colors.white,
+      color: _utils.colors.white,
       borderWidth: 4
     }
   });
-},458,[1,56,2,459],"src/components/camera/CameraButton.js");
+},460,[1,56,2,461],"src/components/camera/CameraButton.js");
 __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, exports, _dependencyMap) {
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+
+  var _Colors = _$$_REQUIRE(_dependencyMap[0], "./Colors");
+
+  Object.keys(_Colors).forEach(function (key) {
+    if (key === "default" || key === "__esModule") return;
+    Object.defineProperty(exports, key, {
+      enumerable: true,
+      get: function get() {
+        return _Colors[key];
+      }
+    });
+  });
+},461,[462],"src/utils/index.js");
+__d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, exports, _dependencyMap) {
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  exports.colors = void 0;
   var colors = {
-    white: '#fff'
+    white: '#fff',
+    black: '#000'
   };
-},459,[],"src/utils/Colors.js");
+  exports.colors = colors;
+},462,[],"src/utils/Colors.js");
+__d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, exports, _dependencyMap) {
+  var _interopRequireDefault = _$$_REQUIRE(_dependencyMap[0], "@babel/runtime/helpers/interopRequireDefault");
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  exports.TextBlocks = void 0;
+
+  var _react = _interopRequireDefault(_$$_REQUIRE(_dependencyMap[1], "react"));
+
+  var _reactNative = _$$_REQUIRE(_dependencyMap[2], "react-native");
+
+  var _utils = _$$_REQUIRE(_dependencyMap[3], "../../utils");
+
+  var _jsxFileName = "/Users/alessandro/Projects/ReactNative/keimeno/src/components/camera/TextBlocks.js";
+
+  var TextBlocks = function TextBlocks(props) {
+    var mock = {
+      bounds: {
+        origin: {
+          y: 472.9063720703125,
+          x: 311.25
+        },
+        size: {
+          width: 100.0625,
+          height: 20.123595237731934
+        }
+      }
+    };
+    var textBlocks = styles.textBlocks,
+        container = styles.container;
+    return _react.default.createElement(_reactNative.View, {
+      style: container,
+      width: props.width,
+      height: props.height,
+      top: props.top,
+      left: props.left,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 25
+      }
+    }, _react.default.createElement(_reactNative.TouchableOpacity, {
+      onPress: props.onPress,
+      style: [textBlocks, props.styles],
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 26
+      }
+    }));
+  };
+
+  exports.TextBlocks = TextBlocks;
+
+  var styles = _reactNative.StyleSheet.create({
+    textBlocks: {
+      borderRadius: 5,
+      borderColor: _utils.colors.white,
+      color: _utils.colors.white,
+      borderWidth: 1,
+      height: "100%",
+      width: "100%"
+    },
+    container: {
+      position: "absolute"
+    }
+  });
+},463,[1,56,2,461],"src/components/camera/TextBlocks.js");
+__d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, exports, _dependencyMap) {
+  'use strict';
+
+  var _interopRequireDefault = _$$_REQUIRE(_dependencyMap[0], "@babel/runtime/helpers/interopRequireDefault");
+
+  var _classCallCheck2 = _interopRequireDefault(_$$_REQUIRE(_dependencyMap[1], "@babel/runtime/helpers/classCallCheck"));
+
+  var _createClass2 = _interopRequireDefault(_$$_REQUIRE(_dependencyMap[2], "@babel/runtime/helpers/createClass"));
+
+  var _reactNative = _$$_REQUIRE(_dependencyMap[3], "react-native");
+
+  var _nativeInterface = _interopRequireDefault(_$$_REQUIRE(_dependencyMap[4], "./nativeInterface"));
+
+  var invariant = _$$_REQUIRE(_dependencyMap[5], "fbjs/lib/invariant");
+
+  var GROUP_TYPES_OPTIONS = {
+    Album: 'Album',
+    All: 'All',
+    Event: 'Event',
+    Faces: 'Faces',
+    Library: 'Library',
+    PhotoStream: 'PhotoStream',
+    SavedPhotos: 'SavedPhotos'
+  };
+  var ASSET_TYPE_OPTIONS = {
+    All: 'All',
+    Videos: 'Videos',
+    Photos: 'Photos'
+  };
+
+  var CameraRoll = function () {
+    function CameraRoll() {
+      (0, _classCallCheck2.default)(this, CameraRoll);
+    }
+
+    (0, _createClass2.default)(CameraRoll, null, [{
+      key: "saveImageWithTag",
+      value: function saveImageWithTag(tag) {
+        console.warn('`CameraRoll.saveImageWithTag()` is deprecated. Use `CameraRoll.saveToCameraRoll()` instead.');
+        return this.saveToCameraRoll(tag, 'photo');
+      }
+    }, {
+      key: "deletePhotos",
+      value: function deletePhotos(photoUris) {
+        return _nativeInterface.default.deletePhotos(photoUris);
+      }
+    }, {
+      key: "save",
+      value: function save(tag) {
+        var options = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+        var _options$type = options.type,
+            type = _options$type === void 0 ? 'auto' : _options$type,
+            _options$album = options.album,
+            album = _options$album === void 0 ? '' : _options$album;
+        invariant(typeof tag === 'string', 'CameraRoll.saveToCameraRoll must be a valid string.');
+        invariant(options.type === 'photo' || options.type === 'video' || options.type === 'auto' || options.type === undefined, "The second argument to saveToCameraRoll must be 'photo' or 'video' or 'auto'. You passed " + (type || 'unknown'));
+
+        if (type === 'auto') {
+          if (['mov', 'mp4'].indexOf(tag.split('.').slice(-1)[0]) >= 0) {
+            type = 'video';
+          } else {
+            type = 'photo';
+          }
+        }
+
+        return _nativeInterface.default.saveToCameraRoll(tag, {
+          type: type,
+          album: album
+        });
+      }
+    }, {
+      key: "saveToCameraRoll",
+      value: function saveToCameraRoll(tag, type) {
+        return CameraRoll.save(tag, {
+          type: type
+        });
+      }
+    }, {
+      key: "getPhotos",
+      value: function getPhotos(params) {
+        if (!params.assetType) {
+          params.assetType = ASSET_TYPE_OPTIONS.All;
+        }
+
+        if (!params.groupTypes && _reactNative.Platform.OS !== 'android') {
+          params.groupTypes = GROUP_TYPES_OPTIONS.All;
+        }
+
+        if (arguments.length > 1) {
+          console.warn('CameraRoll.getPhotos(tag, success, error) is deprecated.  Use the returned Promise instead');
+          var successCallback = arguments[1];
+
+          var errorCallback = arguments[2] || function () {};
+
+          _nativeInterface.default.getPhotos(params).then(successCallback, errorCallback);
+        }
+
+        return _nativeInterface.default.getPhotos(params);
+      }
+    }]);
+    return CameraRoll;
+  }();
+
+  CameraRoll.GroupTypesOptions = GROUP_TYPES_OPTIONS;
+  CameraRoll.AssetTypeOptions = ASSET_TYPE_OPTIONS;
+  module.exports = CameraRoll;
+},464,[1,24,25,2,465,248],"node_modules/@react-native-community/cameraroll/js/CameraRoll.js");
+__d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, exports, _dependencyMap) {
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  exports.default = void 0;
+
+  var _default = _$$_REQUIRE(_dependencyMap[0], "react-native").NativeModules.RNCCameraRoll;
+
+  exports.default = _default;
+},465,[2],"node_modules/@react-native-community/cameraroll/js/nativeInterface.js");
 __d(function(global, require, _aUnused, _bUnused, module, exports, _cUnused) {
   module.exports = {
   "name": "keimeno",
   "displayName": "keimeno"
 };
-},460,[],"app.json");
+},466,[],"app.json");
 __r(98);
 __r(0);

@@ -20,12 +20,10 @@ export const TextBlocks = props => {
       },
     },
   };
-  const {width, height} = mock.bounds.size;
-  const {x, y} = mock.bounds.origin;
   const {textBlocks,container} = styles;
   return (
-    <View style={container} width={width} height={height} top={y} left={x}>
-      <TouchableOpacity style={[textBlocks, props.styles]}></TouchableOpacity>
+    <View style={container} width={props.width} height={props.height} top={props.top} left={props.left}>
+      <TouchableOpacity onPress={props.onPress} style={[textBlocks, props.styles]}></TouchableOpacity>
     </View>
   );
 };
@@ -40,6 +38,6 @@ const styles = StyleSheet.create({
     width: "100%"
   },
   container: {
-      position: "absolute"
+      position: "absolute",
   }
 });

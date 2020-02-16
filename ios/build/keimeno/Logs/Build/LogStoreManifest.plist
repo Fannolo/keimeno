@@ -6,7 +6,7 @@
 	<integer>10</integer>
 	<key>logs</key>
 	<dict>
-		<key>73F260D5-C4BD-4C6B-A9C7-F9D301071E99</key>
+		<key>54FBF14D-07C7-4E0A-BA74-EAE23F1431BC</key>
 		<dict>
 			<key>className</key>
 			<string>IDECommandLineBuildLog</string>
@@ -15,7 +15,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>73F260D5-C4BD-4C6B-A9C7-F9D301071E99.xcactivitylog</string>
+			<string>54FBF14D-07C7-4E0A-BA74-EAE23F1431BC.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -32,47 +32,13 @@
 			<key>signature</key>
 			<string>Building workspace keimeno with scheme keimeno and configuration Debug</string>
 			<key>timeStartedRecording</key>
-			<real>603234891.31217802</real>
+			<real>603501021.51513398</real>
 			<key>timeStoppedRecording</key>
-			<real>603234933.98545206</real>
+			<real>603501067.90319705</real>
 			<key>title</key>
 			<string>Building workspace keimeno with scheme keimeno and configuration Debug</string>
 			<key>uniqueIdentifier</key>
-			<string>73F260D5-C4BD-4C6B-A9C7-F9D301071E99</string>
-		</dict>
-		<key>E411BE51-BB5C-40DE-9FD6-912DA97C64A3</key>
-		<dict>
-			<key>className</key>
-			<string>IDECommandLineBuildLog</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>E411BE51-BB5C-40DE-9FD6-912DA97C64A3.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>keimeno project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>keimeno</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Building workspace keimeno with scheme keimeno and configuration Debug</string>
-			<key>timeStartedRecording</key>
-			<real>603070394.962605</real>
-			<key>timeStoppedRecording</key>
-			<real>603070436.89165294</real>
-			<key>title</key>
-			<string>Building workspace keimeno with scheme keimeno and configuration Debug</string>
-			<key>uniqueIdentifier</key>
-			<string>E411BE51-BB5C-40DE-9FD6-912DA97C64A3</string>
+			<string>54FBF14D-07C7-4E0A-BA74-EAE23F1431BC</string>
 		</dict>
 	</dict>
 </dict>
