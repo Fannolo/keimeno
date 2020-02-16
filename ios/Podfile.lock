@@ -310,6 +310,8 @@ PODS:
     - React-cxxreact (= 0.61.5)
     - React-jsi (= 0.61.5)
   - React-jsinspector (0.61.5)
+  - react-native-camera-kit (8.0.4):
+    - React
   - react-native-camera/BarcodeDetectorMLKit (3.17.0):
     - Firebase/MLVision
     - Firebase/MLVisionBarcodeModel
@@ -379,6 +381,11 @@ PODS:
     - React
   - RNScreens (2.0.0-beta.4):
     - React
+  - RNTextDetector (0.0.6):
+    - Firebase/Core
+    - Firebase/MLVision
+    - Firebase/MLVisionTextModel
+    - React
   - Yoga (1.14.0)
 
 DEPENDENCIES:
@@ -399,6 +406,7 @@ DEPENDENCIES:
   - React-jsi (from `../node_modules/react-native/ReactCommon/jsi`)
   - React-jsiexecutor (from `../node_modules/react-native/ReactCommon/jsiexecutor`)
   - React-jsinspector (from `../node_modules/react-native/ReactCommon/jsinspector`)
+  - react-native-camera-kit (from `../node_modules/react-native-camera-kit`)
   - react-native-camera/BarcodeDetectorMLKit (from `../node_modules/react-native-camera`)
   - react-native-camera/FaceDetectorMLKit (from `../node_modules/react-native-camera`)
   - react-native-camera/TextDetector (from `../node_modules/react-native-camera`)
@@ -419,6 +427,7 @@ DEPENDENCIES:
   - RNGestureHandler (from `../node_modules/react-native-gesture-handler`)
   - RNReanimated (from `../node_modules/react-native-reanimated`)
   - RNScreens (from `../node_modules/react-native-screens`)
+  - RNTextDetector (from `../node_modules/react-native-text-detector/ios`)
   - Yoga (from `../node_modules/react-native/ReactCommon/yoga`)
 
 SPEC REPOS:
@@ -478,6 +487,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/ReactCommon/jsinspector"
   react-native-camera:
     :path: "../node_modules/react-native-camera"
+  react-native-camera-kit:
+    :path: "../node_modules/react-native-camera-kit"
   react-native-cameraroll:
     :path: "../node_modules/@react-native-community/cameraroll"
   react-native-safe-area-context:
@@ -510,6 +521,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native-reanimated"
   RNScreens:
     :path: "../node_modules/react-native-screens"
+  RNTextDetector:
+    :path: "../node_modules/react-native-text-detector/ios"
   Yoga:
     :path: "../node_modules/react-native/ReactCommon/yoga"
 
@@ -552,6 +565,7 @@ SPEC CHECKSUMS:
   React-jsiexecutor: d5525f9ed5f782fdbacb64b9b01a43a9323d2386
   React-jsinspector: fa0ecc501688c3c4c34f28834a76302233e29dc0
   react-native-camera: 4ead7a30a89f275f531d80aa720cc69363c38135
+  react-native-camera-kit: ded127598a48890a360fbf5e26cf7c44fcc5b873
   react-native-cameraroll: 035c425c733acd3333e6c673db5ab66a559ca2e0
   react-native-safe-area-context: 8260e5157617df4b72865f44006797f895b2ada7
   React-RCTActionSheet: 600b4d10e3aea0913b5a92256d2719c0cdd26d76
@@ -568,6 +582,7 @@ SPEC CHECKSUMS:
   RNGestureHandler: dde546180bf24af0b5f737c8ad04b6f3fa51609a
   RNReanimated: 031fe8d9ea93c2bd689a40f05320ef9d96f74d7f
   RNScreens: 6053a007667bea81a69087caadf103bba04c032e
+  RNTextDetector: e11784b454e3a72eef23e7b5e89be6def0d4e1cd
   Yoga: f2a7cd4280bfe2cca5a7aed98ba0eb3d1310f18b
 
 PODFILE CHECKSUM: 9558202afece875885a2ddb885a3d0bda88aeac4

@@ -1,6 +1,7 @@
 import React from 'react';
 import {SafeAreaView, StyleSheet, Image, View} from 'react-native';
 import {colors} from '../utils';
+import RNTextDetector from "react-native-text-detector";
 
 export default class PictureScreen extends React.Component {
   constructor(props) {
@@ -8,8 +9,20 @@ export default class PictureScreen extends React.Component {
     this.state = {};
   }
 
+  detectText = async () => {
+    try {
+      console.log(this.props.route.params.imageUri);
+      const visionResp = await RNTextDetector.detectFromUri(this.props.route.params.imageUri);
+      console.log('visionResp', visionResp);
+      this.setState({visionResp:visionResp});
+    } catch (e) {
+      console.warn(e);
+    }
+  };
+
   componentDidMount() {
-    console.log('COMPONENT DID MOUNT');
+    console.log('COMPONENT DID MOUNT run the OCR to recognize the text');
+    this.detectText();
   }
 
   render() {
@@ -19,6 +32,7 @@ export default class PictureScreen extends React.Component {
       <View style={container}>
         <SafeAreaView>
           <View style={imageContainer}>
+            
             <Image style={image} source={{uri: imageUri}} />
           </View>
         </SafeAreaView>
