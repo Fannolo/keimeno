@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>logFormatVersion</key>
+	<integer>10</integer>
+	<key>logs</key>
+	<dict>
+		<key>10584D63-0FA1-4D0E-A0A7-0A5363A857FA</key>
+		<dict>
+			<key>className</key>
+			<string>IDECommandLineBuildLog</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>10584D63-0FA1-4D0E-A0A7-0A5363A857FA.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>keimeno project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>keimeno</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Building workspace keimeno with scheme keimeno and configuration Debug</string>
+			<key>timeStartedRecording</key>
+			<real>603319012.16899395</real>
+			<key>timeStoppedRecording</key>
+			<real>603319032.350981</real>
+			<key>title</key>
+			<string>Building workspace keimeno with scheme keimeno and configuration Debug</string>
+			<key>uniqueIdentifier</key>
+			<string>10584D63-0FA1-4D0E-A0A7-0A5363A857FA</string>
+		</dict>
+		<key>73F260D5-C4BD-4C6B-A9C7-F9D301071E99</key>
+		<dict>
+			<key>className</key>
+			<string>IDECommandLineBuildLog</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>73F260D5-C4BD-4C6B-A9C7-F9D301071E99.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>keimeno project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>keimeno</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Building workspace keimeno with scheme keimeno and configuration Debug</string>
+			<key>timeStartedRecording</key>
+			<real>603234891.31217802</real>
+			<key>timeStoppedRecording</key>
+			<real>603234933.98545206</real>
+			<key>title</key>
+			<string>Building workspace keimeno with scheme keimeno and configuration Debug</string>
+			<key>uniqueIdentifier</key>
+			<string>73F260D5-C4BD-4C6B-A9C7-F9D301071E99</string>
+		</dict>
+	</dict>
+</dict>
+</plist>
