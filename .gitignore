@@ -60,6 +60,9 @@ node_modules
 /bots/node_modules/
 package-lock.json
 
+# yarn
+yarn-error.log
+
 # OS X
 .DS_Store
 
@@ -100,3 +103,6 @@ RNTester/Pods/*
 # Visual studio
 .vscode
 .vs
+/ios/Pods/FirebaseMLVisionFaceModel/Frameworks/FirebaseMLVisionFaceModel.framework/FirebaseMLVisionFaceModel
+/ios/Pods/FirebaseMLVisionBarcodeModel/Frameworks/FirebaseMLVisionBarcodeModel.framework/FirebaseMLVisionBarcodeModel
+/ios/Pods/FirebaseMLVisionTextModel/Frameworks/FirebaseMLVisionTextModel.framework/FirebaseMLVisionTextModel
