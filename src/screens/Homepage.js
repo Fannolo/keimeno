@@ -37,7 +37,6 @@ export default class HomePage extends React.Component {
           style={camera}
           cameraOptions={{flashMode: 'off', focusMode: 'on', zoomMode: 'off'}}
         />
-
         {/* <RNCamera
           ref={ref => {
             this.camera = ref;
@@ -82,8 +81,5 @@ const styles = StyleSheet.create({
   camera: {
     flex: 1,
     zIndex: 0,
-  },
-  textBlocksContainer: {
-    position: 'absolute',
-  },
+  }
 });
