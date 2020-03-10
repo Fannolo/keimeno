@@ -22,12 +22,15 @@
     "react-native-camera-kit": "^8.0.4",
     "react-native-gesture-handler": "^1.6.0",
     "react-native-google-image-search": "^0.1.0",
+    "react-native-masonry": "^0.5.0-alpha.5",
     "react-native-pixel-perfect": "^1.0.2",
     "react-native-raw-bottom-sheet": "^2.0.6",
     "react-native-reanimated": "^1.7.0",
     "react-native-safe-area-context": "^0.7.3",
     "react-native-screens": "^2.0.0-beta.4",
-    "react-native-text-detector": "github:zsajjad/react-native-text-detector#firebase"
+    "react-native-text-detector": "github:zsajjad/react-native-text-detector#firebase",
+    "react-native-vector-icons": "^6.6.0",
+    "reanimated-bottom-sheet": "^1.0.0-alpha.19"
   },
   "devDependencies": {
     "@babel/core": "7.8.4",
