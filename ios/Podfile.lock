@@ -312,23 +312,23 @@ PODS:
   - React-jsinspector (0.61.5)
   - react-native-camera-kit (8.0.4):
     - React
-  - react-native-camera/BarcodeDetectorMLKit (3.17.0):
+  - react-native-camera/BarcodeDetectorMLKit (3.19.2):
     - Firebase/MLVision
     - Firebase/MLVisionBarcodeModel
     - React
     - react-native-camera/RCT
     - react-native-camera/RN
-  - react-native-camera/FaceDetectorMLKit (3.17.0):
+  - react-native-camera/FaceDetectorMLKit (3.19.2):
     - Firebase/MLVision
     - Firebase/MLVisionFaceModel
     - React
     - react-native-camera/RCT
     - react-native-camera/RN
-  - react-native-camera/RCT (3.17.0):
+  - react-native-camera/RCT (3.19.2):
     - React
-  - react-native-camera/RN (3.17.0):
+  - react-native-camera/RN (3.19.2):
     - React
-  - react-native-camera/TextDetector (3.17.0):
+  - react-native-camera/TextDetector (3.19.2):
     - Firebase/MLVision
     - Firebase/MLVisionTextModel
     - React
@@ -373,18 +373,20 @@ PODS:
     - React-cxxreact (= 0.61.5)
     - React-jsi (= 0.61.5)
     - ReactCommon/jscallinvoker (= 0.61.5)
-  - RNCMaskedView (0.1.6):
+  - RNCMaskedView (0.1.7):
     - React
   - RNGestureHandler (1.6.0):
     - React
   - RNReanimated (1.7.0):
     - React
-  - RNScreens (2.0.0-beta.4):
+  - RNScreens (2.3.0):
     - React
   - RNTextDetector (0.0.6):
     - Firebase/Core
     - Firebase/MLVision
     - Firebase/MLVisionTextModel
+    - React
+  - RNVectorIcons (6.6.0):
     - React
   - Yoga (1.14.0)
 
@@ -428,6 +430,7 @@ DEPENDENCIES:
   - RNReanimated (from `../node_modules/react-native-reanimated`)
   - RNScreens (from `../node_modules/react-native-screens`)
   - RNTextDetector (from `../node_modules/react-native-text-detector/ios`)
+  - RNVectorIcons (from `../node_modules/react-native-vector-icons`)
   - Yoga (from `../node_modules/react-native/ReactCommon/yoga`)
 
 SPEC REPOS:
@@ -523,6 +526,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native-screens"
   RNTextDetector:
     :path: "../node_modules/react-native-text-detector/ios"
+  RNVectorIcons:
+    :path: "../node_modules/react-native-vector-icons"
   Yoga:
     :path: "../node_modules/react-native/ReactCommon/yoga"
 
@@ -564,7 +569,7 @@ SPEC CHECKSUMS:
   React-jsi: cb2cd74d7ccf4cffb071a46833613edc79cdf8f7
   React-jsiexecutor: d5525f9ed5f782fdbacb64b9b01a43a9323d2386
   React-jsinspector: fa0ecc501688c3c4c34f28834a76302233e29dc0
-  react-native-camera: 4ead7a30a89f275f531d80aa720cc69363c38135
+  react-native-camera: 2b575b086c06caf89fd3d119d06bd977a9942103
   react-native-camera-kit: ded127598a48890a360fbf5e26cf7c44fcc5b873
   react-native-cameraroll: 035c425c733acd3333e6c673db5ab66a559ca2e0
   react-native-safe-area-context: 8260e5157617df4b72865f44006797f895b2ada7
@@ -578,11 +583,12 @@ SPEC CHECKSUMS:
   React-RCTText: 9ccc88273e9a3aacff5094d2175a605efa854dbe
   React-RCTVibration: a49a1f42bf8f5acf1c3e297097517c6b3af377ad
   ReactCommon: 198c7c8d3591f975e5431bec1b0b3b581aa1c5dd
-  RNCMaskedView: e5b99bc191945f157adeede68da9d424462de177
+  RNCMaskedView: 90dd32f5b786bd562e876e1421ea77c700cbf71e
   RNGestureHandler: dde546180bf24af0b5f737c8ad04b6f3fa51609a
   RNReanimated: 031fe8d9ea93c2bd689a40f05320ef9d96f74d7f
-  RNScreens: 6053a007667bea81a69087caadf103bba04c032e
+  RNScreens: 03bf608b92ac0acf323f47d8f5b63a8f829340c8
   RNTextDetector: e11784b454e3a72eef23e7b5e89be6def0d4e1cd
+  RNVectorIcons: 0bb4def82230be1333ddaeee9fcba45f0b288ed4
   Yoga: f2a7cd4280bfe2cca5a7aed98ba0eb3d1310f18b
 
 PODFILE CHECKSUM: 9558202afece875885a2ddb885a3d0bda88aeac4

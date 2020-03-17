@@ -20,8 +20,8 @@
 		40F219FBA1CE456AC095C088 /* libPods-keimenoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6152FCFF22BF3544E2DBB819 /* libPods-keimenoTests.a */; };
 		6B32D2BF05D87DA4360E23A0 /* libPods-keimeno.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6940DE0C0859A03BDDDE4927 /* libPods-keimeno.a */; };
 		83F093A121D984D9F0A68670 /* libPods-keimeno-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B60215B72E9838330C2798D /* libPods-keimeno-tvOSTests.a */; };
-		D271120423F9E5A100CC6A8C /* tessdata in Resources */ = {isa = PBXBuildFile; fileRef = D271120323F9E5A100CC6A8C /* tessdata */; };
 		D2ECDB9023F0ADC600BFED64 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D2ECDB8F23F0ADC500BFED64 /* GoogleService-Info.plist */; };
+		E98B872B2421764D000B480D /* tessdata in Resources */ = {isa = PBXBuildFile; fileRef = E98B872A2421764D000B480D /* tessdata */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,9 +65,9 @@
 		B7E69769485F979D14DDB8DC /* libPods-keimeno-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-keimeno-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA9E067A47A801F5E8F2BE90 /* Pods-keimeno-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-keimeno-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-keimeno-tvOSTests/Pods-keimeno-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		BDEF14FDB8DEE211D861424F /* Pods-keimenoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-keimenoTests.debug.xcconfig"; path = "Target Support Files/Pods-keimenoTests/Pods-keimenoTests.debug.xcconfig"; sourceTree = "<group>"; };
-		D271120323F9E5A100CC6A8C /* tessdata */ = {isa = PBXFileReference; lastKnownFileType = folder; name = tessdata; path = ../../../../Documents/tessdata; sourceTree = "<group>"; };
 		D2ECDB8F23F0ADC500BFED64 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E8B572DED38D6F3618E39C9C /* Pods-keimeno.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-keimeno.release.xcconfig"; path = "Target Support Files/Pods-keimeno/Pods-keimeno.release.xcconfig"; sourceTree = "<group>"; };
+		E98B872A2421764D000B480D /* tessdata */ = {isa = PBXFileReference; lastKnownFileType = folder; path = tessdata; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
 		FD23F125BEC01940CC1E1DCE /* Pods-keimeno-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-keimeno-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-keimeno-tvOSTests/Pods-keimeno-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -164,7 +164,7 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
-				D271120323F9E5A100CC6A8C /* tessdata */,
+				E98B872A2421764D000B480D /* tessdata */,
 				13B07FAE1A68108700A75B9A /* keimeno */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* keimenoTests */,
@@ -348,7 +348,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
-				D271120423F9E5A100CC6A8C /* tessdata in Resources */,
+				E98B872B2421764D000B480D /* tessdata in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
 				D2ECDB9023F0ADC600BFED64 /* GoogleService-Info.plist in Resources */,
 			);
@@ -395,11 +395,43 @@
 				"${PODS_ROOT}/Target Support Files/Pods-keimeno/Pods-keimeno-resources.sh",
 				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseMLVisionFaceModel/GoogleMVFaceDetectorResources.bundle",
 				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseMLVisionTextModel/GoogleMVTextDetectorResources.bundle",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/AntDesign.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Entypo.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Feather.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/FontAwesome.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Brands.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Regular.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Solid.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Fontisto.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Foundation.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Ionicons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/MaterialCommunityIcons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/MaterialIcons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Octicons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/SimpleLineIcons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Zocial.ttf",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMVFaceDetectorResources.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMVTextDetectorResources.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AntDesign.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Entypo.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/EvilIcons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Feather.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FontAwesome.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FontAwesome5_Brands.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FontAwesome5_Regular.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FontAwesome5_Solid.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Fontisto.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Foundation.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Ionicons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MaterialCommunityIcons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MaterialIcons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Octicons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SimpleLineIcons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Zocial.ttf",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

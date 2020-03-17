@@ -22,7 +22,7 @@
     "react-native-camera-kit": "^8.0.4",
     "react-native-gesture-handler": "^1.6.0",
     "react-native-google-image-search": "^0.1.0",
-    "react-native-masonry": "^0.5.0-alpha.5",
+    "react-native-masonry-list": "^2.16.1",
     "react-native-pixel-perfect": "^1.0.2",
     "react-native-raw-bottom-sheet": "^2.0.6",
     "react-native-reanimated": "^1.7.0",

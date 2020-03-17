@@ -3,31 +3,18 @@ import {View, Text, Image, StyleSheet, ScrollView} from 'react-native';
 //import RBSheet from 'react-native-raw-bottom-sheet';
 import BottomSheet from 'reanimated-bottom-sheet';
 import {Title, Subtitle, EditableTitle} from '../utils';
+import MasonryList from 'react-native-masonry-list';
 
 export const BottomSheetComponent = props => {
   const refRBSheet = useRef();
 
   /**Method for returning all the images containing all the food informations**/
   const renderImages = () => {
-    return props.items.map(item => {
-      return (
-        <View style={{flex: 1}}>
-          <View>
-            <Image
-              width={200}
-              height={200}
-              source={{
-                uri: item.thumbnailUrl,
-              }}
-              resizeMode="contain"
-              key={item.thumbnailUrl}
-            />
-          </View>
-          <Text>{item.name}</Text>
-          <Text>{item.thumbnailUrl}</Text>
-        </View>
-      );
+    let arrayUris = [];
+    props.items.map(item => {
+      arrayUris.push({uri: item.thumbnailUrl});
     });
+    return <MasonryList images={arrayUris}/>;
   };
 
   /**This Method renders the informations inside the bottom sheet**/
@@ -61,12 +48,12 @@ export const BottomSheetComponent = props => {
     <BottomSheet
       snapPoints={[0, '60%', '90%']}
       ref={refRBSheet}
+      onCloseEnd={props.onCloseEnd}
       renderContent={renderInner}
-      renderHeader={renderHeader}></BottomSheet>
+      renderHeader={renderHeader}
+    />
   );
 };
-
-const IMAGE_SIZE = 200;
 
 const styles = StyleSheet.create({
   imageContainer: {
@@ -79,18 +66,16 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#F5FCFF',
   },
-  box: {
-    width: IMAGE_SIZE,
-    height: IMAGE_SIZE,
-  },
   panelContainer: {
     position: 'absolute',
     top: 0,
+    flex: 1,
     bottom: 0,
     left: 0,
     right: 0,
   },
   panel: {
+    flex: 1,
     height: '100%',
     padding: 20,
     backgroundColor: '#fff',
@@ -99,8 +84,8 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
     shadowColor: '#000000',
     paddingTop: 10,
-    borderTopLeftRadius: 20,
-    borderTopRightRadius: 20,
+    borderTopLeftRadius: 10,
+    borderTopRightRadius: 10,
   },
   panelHeader: {
     alignItems: 'center',
@@ -120,27 +105,6 @@ const styles = StyleSheet.create({
     color: 'gray',
     height: 30,
     marginBottom: 10,
-  },
-  panelButton: {
-    padding: 20,
-    borderRadius: 10,
-    backgroundColor: '#318bfb',
-    alignItems: 'center',
-    marginVertical: 10,
-  },
-  panelButtonTitle: {
-    fontSize: 17,
-    fontWeight: 'bold',
-    color: 'white',
-  },
-  photo: {
-    width: '100%',
-    height: 225,
-    marginTop: 30,
-  },
-  map: {
-    height: '100%',
-    width: '100%',
   },
 });
 
