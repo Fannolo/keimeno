@@ -18,7 +18,7 @@ export default class HomePage extends React.Component {
     if (this.camera) {
       const data = await this.camera.capture(true);
       //console.warn('takePicture ', data);
-      CameraRoll.saveToCameraRoll(data.uri, 'photo');
+      //CameraRoll.saveToCameraRoll(data.uri, 'photo');
       this.props.navigation.navigate('PictureScreen', {imageUri: data.uri});
     }
   };
