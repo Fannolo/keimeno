@@ -18,7 +18,7 @@ export const Subtitle = props => {
 export const EditableTitle = props => {
   return (
     <TextInput
-    style={[props.style, styles.title]}
+      style={[props.style, styles.title]}
       value={props.text}
       onChangeText={props.onChangeText ? props.onChangeText() : null}
       autoFocus

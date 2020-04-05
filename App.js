@@ -12,6 +12,7 @@ import {NavigationContainer} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
 import HomePage from './src/screens/Homepage';
 import PictureScreen from './src/screens/PictureScreen';
+import {ErrorScreen} from './src/components';
 const Stack = createStackNavigator();
 
 class App extends React.Component {
@@ -33,6 +34,11 @@ class App extends React.Component {
               animationEnabled: false,
               gestureDirection: 'vertical',
             }}
+          />
+          <Stack.Screen
+            name="ErrorScreen"
+            component={ErrorScreen}
+            options={{swipeEnabled: false}}
           />
         </Stack.Navigator>
       </NavigationContainer>
