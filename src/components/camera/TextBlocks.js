@@ -20,10 +20,18 @@ export const TextBlocks = props => {
   //     },
   //   },
   // };
-  const {textBlocks,container} = styles;
+  const {textBlocks, container} = styles;
   return (
-    <View style={container} width={props.width} height={props.height} top={props.top} left={props.left}>
-      <TouchableOpacity onPress={props.onPress} style={[textBlocks, props.styles]}></TouchableOpacity>
+    <View
+      style={container}
+      width={props.width}
+      height={props.height}
+      top={props.top}
+      left={props.left}>
+      <TouchableOpacity
+        onPress={props.onPress}
+        style={[textBlocks, props.styles]}
+      />
     </View>
   );
 };
@@ -34,10 +42,10 @@ const styles = StyleSheet.create({
     borderColor: colors.white,
     color: colors.white,
     borderWidth: 1,
-    height: "100%",
-    width: "100%"
+    height: '100%',
+    width: '100%',
   },
-  container: {
-      position: "absolute",
-  }
+  container: {
+    position: 'absolute',
+  },
 });

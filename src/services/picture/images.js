@@ -19,7 +19,7 @@ export const searchImages = searchTerm => {
       headers: headers,
     })
     .then(res => {
-      console.log('Results : ', res.data.value);
+      console.log('Results : ', res);
       return res.data.value;
     })
     .catch(error => {

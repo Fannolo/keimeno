@@ -112,13 +112,16 @@ export default class PictureScreen extends React.Component {
               let results = await searchImages(item.text)
                 .then(res => {
                   this.setState({
-                    items: results,
+                    items: res,
                   });
-                  // }
-                  this.setState({title: item.text});
-                  this.setState({openBottomSheet: true});
+                  this.setState({
+                    title: 'The results of your search',
+                    subtitle: item.text,
+                    openBottomSheet: true,
+                  });
                 })
                 .catch(error => {
+                  console.log('ERROR IMAGE API: ', error.response);
                   this.props.navigation.navigate('ErrorScreen');
                 });
             }}
@@ -129,9 +132,9 @@ export default class PictureScreen extends React.Component {
   }
 
   _onCloseEnd = () => {
-    // if (this.state.openBottomSheet) {
-    //   this.setState({openBottomSheet: false, items: null});
-    // }
+    if (this.state.openBottomSheet) {
+      this.setState({openBottomSheet: false, items: null});
+    }
   };
 
   _onLayout = event => {
@@ -167,7 +170,7 @@ export default class PictureScreen extends React.Component {
           <BottomSheetComponent
             items={this.state.items}
             title={this.state.title}
-            onCloseEnd={this._onCloseEnd()}
+            onCloseEnd={this._onCloseEnd.bind(this)}
             subtitle={this.state.subtitle}
             openBottomSheet={this.state.openBottomSheet}
           />
