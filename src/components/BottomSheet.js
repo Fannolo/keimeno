@@ -14,7 +14,7 @@ export const BottomSheetComponent = props => {
     props.items.map(item => {
       arrayUris.push({uri: item.thumbnailUrl});
     });
-    return <MasonryList images={arrayUris}/>;
+    return <MasonryList images={arrayUris} />;
   };
 
   /**This Method renders the informations inside the bottom sheet**/

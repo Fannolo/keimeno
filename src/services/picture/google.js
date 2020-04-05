@@ -26,7 +26,7 @@ export const retrieveImages = searchTerm => {
       headers: headers,
     })
     .then(res => {
-      console.log("Results : ", res.data.items);
+      console.log('Results : ', res.data.items);
       return res.data.items;
     })
     .catch(error => {

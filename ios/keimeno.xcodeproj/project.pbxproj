@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* keimenoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* keimenoTests.m */; };
-		0BDE8A0D4BAE176EB9D84ED4 /* libPods-keimeno-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B7E69769485F979D14DDB8DC /* libPods-keimeno-tvOS.a */; };
+		05A0EA2575695A6936B4B431 /* libPods-keimeno-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 512AF41ACDC87E42B1B9B902 /* libPods-keimeno-tvOSTests.a */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB11A68108700A75B9A /* LaunchScreen.xib */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
@@ -17,11 +17,11 @@
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		2DCD954D1E0B4F2C00145EB5 /* keimenoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* keimenoTests.m */; };
-		40F219FBA1CE456AC095C088 /* libPods-keimenoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6152FCFF22BF3544E2DBB819 /* libPods-keimenoTests.a */; };
-		6B32D2BF05D87DA4360E23A0 /* libPods-keimeno.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6940DE0C0859A03BDDDE4927 /* libPods-keimeno.a */; };
-		83F093A121D984D9F0A68670 /* libPods-keimeno-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B60215B72E9838330C2798D /* libPods-keimeno-tvOSTests.a */; };
+		ACF7883D532641D9CC382FFA /* libPods-keimeno-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9ED3D7A4BA265B0BC5D89683 /* libPods-keimeno-tvOS.a */; };
 		D2ECDB9023F0ADC600BFED64 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D2ECDB8F23F0ADC500BFED64 /* GoogleService-Info.plist */; };
 		E98B872B2421764D000B480D /* tessdata in Resources */ = {isa = PBXBuildFile; fileRef = E98B872A2421764D000B480D /* tessdata */; };
+		EA99984F9B24204A8D8D93EF /* libPods-keimenoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AA4931A3B60A3CAD95927ADE /* libPods-keimenoTests.a */; };
+		ED9ACBDB58C399D6E4F47966 /* libPods-keimeno.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A9B0D6E32BE1CD2A5D174D6 /* libPods-keimeno.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,7 +46,9 @@
 		00E356EE1AD99517003FC87E /* keimenoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = keimenoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* keimenoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = keimenoTests.m; sourceTree = "<group>"; };
-		0D09C7C77413BFD607893C82 /* Pods-keimeno.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-keimeno.debug.xcconfig"; path = "Target Support Files/Pods-keimeno/Pods-keimeno.debug.xcconfig"; sourceTree = "<group>"; };
+		0A9B0D6E32BE1CD2A5D174D6 /* libPods-keimeno.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-keimeno.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0E767D8C74D881117CF013E7 /* Pods-keimeno-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-keimeno-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-keimeno-tvOS/Pods-keimeno-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
+		110742903AF7EECF78758227 /* Pods-keimeno.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-keimeno.debug.xcconfig"; path = "Target Support Files/Pods-keimeno/Pods-keimeno.debug.xcconfig"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* keimeno.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = keimeno.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = keimeno/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = keimeno/AppDelegate.m; sourceTree = "<group>"; };
@@ -56,21 +58,19 @@
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = keimeno/main.m; sourceTree = "<group>"; };
 		2D02E47B1E0B4A5D006451C7 /* keimeno-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "keimeno-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* keimeno-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "keimeno-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3F07A976E9B71073D6E92E89 /* Pods-keimenoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-keimenoTests.release.xcconfig"; path = "Target Support Files/Pods-keimenoTests/Pods-keimenoTests.release.xcconfig"; sourceTree = "<group>"; };
-		4F9B14B4B16653DC52FF8B48 /* Pods-keimeno-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-keimeno-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-keimeno-tvOS/Pods-keimeno-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
-		5B60215B72E9838330C2798D /* libPods-keimeno-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-keimeno-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		6152FCFF22BF3544E2DBB819 /* libPods-keimenoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-keimenoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		6940DE0C0859A03BDDDE4927 /* libPods-keimeno.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-keimeno.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		9D8F4C094AD5005F5CC526CF /* Pods-keimeno-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-keimeno-tvOS.release.xcconfig"; path = "Target Support Files/Pods-keimeno-tvOS/Pods-keimeno-tvOS.release.xcconfig"; sourceTree = "<group>"; };
-		B7E69769485F979D14DDB8DC /* libPods-keimeno-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-keimeno-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		BA9E067A47A801F5E8F2BE90 /* Pods-keimeno-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-keimeno-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-keimeno-tvOSTests/Pods-keimeno-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
-		BDEF14FDB8DEE211D861424F /* Pods-keimenoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-keimenoTests.debug.xcconfig"; path = "Target Support Files/Pods-keimenoTests/Pods-keimenoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		301FA92D478C46A0D53483C0 /* Pods-keimeno-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-keimeno-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-keimeno-tvOSTests/Pods-keimeno-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		34A57B528FEA1AFCDE7BFE90 /* Pods-keimeno-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-keimeno-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-keimeno-tvOSTests/Pods-keimeno-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		47A252DB1E45E1250740E2D4 /* Pods-keimenoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-keimenoTests.release.xcconfig"; path = "Target Support Files/Pods-keimenoTests/Pods-keimenoTests.release.xcconfig"; sourceTree = "<group>"; };
+		512AF41ACDC87E42B1B9B902 /* libPods-keimeno-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-keimeno-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D08BDC27FA9E3C639E065BB /* Pods-keimenoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-keimenoTests.debug.xcconfig"; path = "Target Support Files/Pods-keimenoTests/Pods-keimenoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6AEC637BB661C3735CBF69B2 /* Pods-keimeno-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-keimeno-tvOS.release.xcconfig"; path = "Target Support Files/Pods-keimeno-tvOS/Pods-keimeno-tvOS.release.xcconfig"; sourceTree = "<group>"; };
+		9ED3D7A4BA265B0BC5D89683 /* libPods-keimeno-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-keimeno-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA4931A3B60A3CAD95927ADE /* libPods-keimenoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-keimenoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2ECDB8F23F0ADC500BFED64 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		E8B572DED38D6F3618E39C9C /* Pods-keimeno.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-keimeno.release.xcconfig"; path = "Target Support Files/Pods-keimeno/Pods-keimeno.release.xcconfig"; sourceTree = "<group>"; };
+		E15EC8B8A99E94367C518A67 /* Pods-keimeno.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-keimeno.release.xcconfig"; path = "Target Support Files/Pods-keimeno/Pods-keimeno.release.xcconfig"; sourceTree = "<group>"; };
 		E98B872A2421764D000B480D /* tessdata */ = {isa = PBXFileReference; lastKnownFileType = folder; path = tessdata; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
-		FD23F125BEC01940CC1E1DCE /* Pods-keimeno-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-keimeno-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-keimeno-tvOSTests/Pods-keimeno-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,7 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				40F219FBA1CE456AC095C088 /* libPods-keimenoTests.a in Frameworks */,
+				EA99984F9B24204A8D8D93EF /* libPods-keimenoTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,7 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6B32D2BF05D87DA4360E23A0 /* libPods-keimeno.a in Frameworks */,
+				ED9ACBDB58C399D6E4F47966 /* libPods-keimeno.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,7 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0BDE8A0D4BAE176EB9D84ED4 /* libPods-keimeno-tvOS.a in Frameworks */,
+				ACF7883D532641D9CC382FFA /* libPods-keimeno-tvOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,7 +102,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				83F093A121D984D9F0A68670 /* libPods-keimeno-tvOSTests.a in Frameworks */,
+				05A0EA2575695A6936B4B431 /* libPods-keimeno-tvOSTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,10 +146,10 @@
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				ED2971642150620600B7C4FE /* JavaScriptCore.framework */,
-				6940DE0C0859A03BDDDE4927 /* libPods-keimeno.a */,
-				B7E69769485F979D14DDB8DC /* libPods-keimeno-tvOS.a */,
-				5B60215B72E9838330C2798D /* libPods-keimeno-tvOSTests.a */,
-				6152FCFF22BF3544E2DBB819 /* libPods-keimenoTests.a */,
+				0A9B0D6E32BE1CD2A5D174D6 /* libPods-keimeno.a */,
+				9ED3D7A4BA265B0BC5D89683 /* libPods-keimeno-tvOS.a */,
+				512AF41ACDC87E42B1B9B902 /* libPods-keimeno-tvOSTests.a */,
+				AA4931A3B60A3CAD95927ADE /* libPods-keimenoTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -191,14 +191,14 @@
 		B1A74F8DB53565E8E7C69B4E /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				0D09C7C77413BFD607893C82 /* Pods-keimeno.debug.xcconfig */,
-				E8B572DED38D6F3618E39C9C /* Pods-keimeno.release.xcconfig */,
-				4F9B14B4B16653DC52FF8B48 /* Pods-keimeno-tvOS.debug.xcconfig */,
-				9D8F4C094AD5005F5CC526CF /* Pods-keimeno-tvOS.release.xcconfig */,
-				BA9E067A47A801F5E8F2BE90 /* Pods-keimeno-tvOSTests.debug.xcconfig */,
-				FD23F125BEC01940CC1E1DCE /* Pods-keimeno-tvOSTests.release.xcconfig */,
-				BDEF14FDB8DEE211D861424F /* Pods-keimenoTests.debug.xcconfig */,
-				3F07A976E9B71073D6E92E89 /* Pods-keimenoTests.release.xcconfig */,
+				110742903AF7EECF78758227 /* Pods-keimeno.debug.xcconfig */,
+				E15EC8B8A99E94367C518A67 /* Pods-keimeno.release.xcconfig */,
+				0E767D8C74D881117CF013E7 /* Pods-keimeno-tvOS.debug.xcconfig */,
+				6AEC637BB661C3735CBF69B2 /* Pods-keimeno-tvOS.release.xcconfig */,
+				301FA92D478C46A0D53483C0 /* Pods-keimeno-tvOSTests.debug.xcconfig */,
+				34A57B528FEA1AFCDE7BFE90 /* Pods-keimeno-tvOSTests.release.xcconfig */,
+				5D08BDC27FA9E3C639E065BB /* Pods-keimenoTests.debug.xcconfig */,
+				47A252DB1E45E1250740E2D4 /* Pods-keimenoTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -210,7 +210,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "keimenoTests" */;
 			buildPhases = (
-				4A066C8225E48E40D94482B5 /* [CP] Check Pods Manifest.lock */,
+				C5608BFFB95E71CAA359D416 /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
@@ -229,13 +229,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "keimeno" */;
 			buildPhases = (
-				17575357793B3C8037F136B0 /* [CP] Check Pods Manifest.lock */,
+				2F2B65821DFDCF38B2B254BB /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				02561C4F2512DE4CC1E4E9EA /* [CP] Copy Pods Resources */,
+				0B34F6111F06323F647A92E7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -250,7 +250,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "keimeno-tvOS" */;
 			buildPhases = (
-				FA74DA1EF2CE54B5843B5975 /* [CP] Check Pods Manifest.lock */,
+				129FD49B465C3FE18DC9346F /* [CP] Check Pods Manifest.lock */,
 				FD10A7F122414F3F0027D42C /* Start Packager */,
 				2D02E4771E0B4A5D006451C7 /* Sources */,
 				2D02E4781E0B4A5D006451C7 /* Frameworks */,
@@ -270,7 +270,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "keimeno-tvOSTests" */;
 			buildPhases = (
-				19E13A158EC641C4C21FCB21 /* [CP] Check Pods Manifest.lock */,
+				14B55CD35DD6AEB60E1133FE /* [CP] Check Pods Manifest.lock */,
 				2D02E48C1E0B4A5D006451C7 /* Sources */,
 				2D02E48D1E0B4A5D006451C7 /* Frameworks */,
 				2D02E48E1E0B4A5D006451C7 /* Resources */,
@@ -386,7 +386,7 @@
 			shellPath = /bin/sh;
 			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
 		};
-		02561C4F2512DE4CC1E4E9EA /* [CP] Copy Pods Resources */ = {
+		0B34F6111F06323F647A92E7 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -438,7 +438,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-keimeno/Pods-keimeno-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		17575357793B3C8037F136B0 /* [CP] Check Pods Manifest.lock */ = {
+		129FD49B465C3FE18DC9346F /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -453,14 +453,14 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-keimeno-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-keimeno-tvOS-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		19E13A158EC641C4C21FCB21 /* [CP] Check Pods Manifest.lock */ = {
+		14B55CD35DD6AEB60E1133FE /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -496,7 +496,29 @@
 			shellPath = /bin/sh;
 			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
 		};
-		4A066C8225E48E40D94482B5 /* [CP] Check Pods Manifest.lock */ = {
+		2F2B65821DFDCF38B2B254BB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-keimeno-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C5608BFFB95E71CAA359D416 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -512,28 +534,6 @@
 			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-keimenoTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		FA74DA1EF2CE54B5843B5975 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-keimeno-tvOS-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -645,7 +645,7 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BDEF14FDB8DEE211D861424F /* Pods-keimenoTests.debug.xcconfig */;
+			baseConfigurationReference = 5D08BDC27FA9E3C639E065BB /* Pods-keimenoTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
@@ -670,7 +670,7 @@
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3F07A976E9B71073D6E92E89 /* Pods-keimenoTests.release.xcconfig */;
+			baseConfigurationReference = 47A252DB1E45E1250740E2D4 /* Pods-keimenoTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
@@ -692,7 +692,7 @@
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0D09C7C77413BFD607893C82 /* Pods-keimeno.debug.xcconfig */;
+			baseConfigurationReference = 110742903AF7EECF78758227 /* Pods-keimeno.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
@@ -713,7 +713,7 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E8B572DED38D6F3618E39C9C /* Pods-keimeno.release.xcconfig */;
+			baseConfigurationReference = E15EC8B8A99E94367C518A67 /* Pods-keimeno.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
@@ -733,7 +733,7 @@
 		};
 		2D02E4971E0B4A5E006451C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4F9B14B4B16653DC52FF8B48 /* Pods-keimeno-tvOS.debug.xcconfig */;
+			baseConfigurationReference = 0E767D8C74D881117CF013E7 /* Pods-keimeno-tvOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -761,7 +761,7 @@
 		};
 		2D02E4981E0B4A5E006451C7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9D8F4C094AD5005F5CC526CF /* Pods-keimeno-tvOS.release.xcconfig */;
+			baseConfigurationReference = 6AEC637BB661C3735CBF69B2 /* Pods-keimeno-tvOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -789,7 +789,7 @@
 		};
 		2D02E4991E0B4A5E006451C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BA9E067A47A801F5E8F2BE90 /* Pods-keimeno-tvOSTests.debug.xcconfig */;
+			baseConfigurationReference = 301FA92D478C46A0D53483C0 /* Pods-keimeno-tvOSTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
@@ -816,7 +816,7 @@
 		};
 		2D02E49A1E0B4A5E006451C7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FD23F125BEC01940CC1E1DCE /* Pods-keimeno-tvOSTests.release.xcconfig */;
+			baseConfigurationReference = 34A57B528FEA1AFCDE7BFE90 /* Pods-keimeno-tvOSTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;

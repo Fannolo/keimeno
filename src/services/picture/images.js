@@ -23,6 +23,7 @@ export const searchImages = searchTerm => {
       return res.data.value;
     })
     .catch(error => {
-      console.error('Image retrieving error : ', error);
+      //console.error('Image retrieving error : ', error);
+      throw error;
     });
 };

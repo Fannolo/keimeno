@@ -109,13 +109,18 @@ export default class PictureScreen extends React.Component {
             top={perfectSize(item.bounding.top)}
             onPress={async () => {
               // if (!this.state.mocks) {
-              let results = await searchImages(item.text);
-              this.setState({
-                items: results,
-              });
-              // }
-              this.setState({title: item.text});
-              this.setState({openBottomSheet: true});
+              let results = await searchImages(item.text)
+                .then(res => {
+                  this.setState({
+                    items: results,
+                  });
+                  // }
+                  this.setState({title: item.text});
+                  this.setState({openBottomSheet: true});
+                })
+                .catch(error => {
+                  this.props.navigation.navigate('ErrorScreen');
+                });
             }}
           />
         );
