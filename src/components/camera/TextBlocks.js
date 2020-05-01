@@ -1,10 +1,5 @@
 import React from 'react';
-import {
-  TouchableOpacity,
-  StyleSheet,
-  TouchableHighlight,
-  View,
-} from 'react-native';
+import {TouchableOpacity, StyleSheet, View} from 'react-native';
 import {colors} from '../../utils';
 
 export const TextBlocks = props => {
