@@ -9,6 +9,11 @@
     "test": "jest",
     "lint": "eslint ."
   },
+  "rnpm": {
+    "assets": [
+      "resources/fonts"
+    ]
+  },
   "dependencies": {
     "@react-native-community/cameraroll": "^1.4.1",
     "@react-native-community/masked-view": "^0.1.6",

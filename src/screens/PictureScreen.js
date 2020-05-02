@@ -139,14 +139,12 @@ export default class PictureScreen extends React.Component {
 
   _onLayout = event => {
     var {width, height} = event.nativeEvent.layout;
-    console.log('Height and width', height, width);
     this.setState({dimensions: {width, height}});
-    console.log('dimensions: ', this.state.dimensions);
   };
 
   render = () => {
     const {imageUri} = this.props.route.params;
-    const {image, container, imageContainer, textBlocksContainer} = styles;
+    const {image, container, imageContainer} = styles;
     return (
       <View style={[container]}>
         <SafeAreaView>

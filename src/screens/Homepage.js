@@ -81,5 +81,5 @@ const styles = StyleSheet.create({
   camera: {
     flex: 1,
     zIndex: 0,
-  }
+  },
 });
